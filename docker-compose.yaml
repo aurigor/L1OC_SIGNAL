@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  signal_model:
+    build: .
+    container_name: glonass_signal_model
+    volumes:
+      - ./src:/app
+      
+      - ./output:/app/output
